@@ -1,0 +1,45 @@
+{% extends 'AppBundle:Layouts:layout.html.twig' %}
+
+{% block content %}
+    <div class="box-form col-md-6">
+        <div class="page-header">
+            <h2>Mis datos</h2>
+        </div> 
+        {{ form_start(form,{'attr':{'action':'','method':'POST','role':'form','enctype':'multipart/form-data'} }) }}
+        <div class="form-group">
+            {{ form_label(form.name)}}
+            {{ form_widget(form.name,{'attr':{'class':'form-control','placeholder':'Your name'} })}}
+            <span class="text-danger">{{form_errors(form.name)}}</span>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.surname)}}
+            {{ form_widget(form.surname,{'attr':{'class':'form-control','placeholder':'Your surname'} })}}
+            <span class="text-danger">{{form_errors(form.surname)}}</span>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.nick)}}
+            {{ form_widget(form.nick,{'attr':{'class':'form-control','placeholder':'Your nick'} })}}
+            <span class="text-danger">{{form_errors(form.nick)}}</span>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.email)}}
+            {{ form_widget(form.email,{'attr':{'class':'form-control','placeholder':'Your email'} })}}
+            <span class="text-danger">{{form_errors(form.email)}}</span>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.bio)}}
+            {{ form_widget(form.bio,{required: false,'attr':{'class':'form-control','placeholder':'Your bio'} })}}
+            <span class="text-danger">{{form_errors(form.bio)}}</span>
+        </div>
+        <div class="form-group">
+            {{ form_label(form.image)}}
+            {{ form_widget(form.image,{required: false,'attr':{'class':'form-control '} })}}
+            <span class="text-danger">{{form_errors(form.email)}}</span>
+        </div>
+        
+        <p>
+            {{ form_widget(form.save,{'label':'Register','attr':{'class':'btn btn-success'} }) }}
+        </p>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

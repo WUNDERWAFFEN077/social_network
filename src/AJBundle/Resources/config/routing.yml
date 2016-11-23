@@ -1,0 +1,3 @@
+aj_homepage:
+    path:     /
+    defaults: { _controller: AJBundle:Default:index }

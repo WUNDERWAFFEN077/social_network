@@ -1,0 +1,65 @@
+/* === GENERAL === */
+
+body{
+	background: url('../img/texture.png') top left repeat;
+}
+
+/* === HEADER === */
+.navbar-collapse .avatar{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    float:left;
+    margin-right: 12px;
+    margin-top: -5px;
+    background-color:white;
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.navbar-collapse .avatar img{
+    height: 100%;
+    text-align: center;
+}
+
+
+/* === REGISTRO === */
+.box-form,
+.box-default{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-top: 0px;
+    margin: 10px auto;
+    float: none;
+}
+
+.box-form input{
+    margin-bottom: 10px;
+}
+
+
+/* === GENTE === */
+.user-item .avatar{
+    background-color: #eee;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    float: left;
+    
+    border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+.user-item .avatar img{
+    height: 100%;
+    text-align: center;
+}
+
+.user-item .user-item-content{
+    padding: 10px;
+    margin-left: 85px;
+    
+}
